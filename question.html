@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+<body>
+<img class="block m-auto" src="./Logo.png" alt="">
+
+    <ol>
+        <li>Var:
+            Scope: var variables are function-scoped. This means they are only accessible within the function in which they are declared or, if not declared within a function, they are global variables accessible throughout the entire program.
+            Hoisting: Variables declared with var are hoisted to the top of their containing function or the global scope, which means the variable declarations are processed before the code execution starts.
+            Reassignment: var variables can be reassigned and updated. <br> <br>
+            Let:
+
+Scope: let variables are block-scoped, meaning they are only accessible within the block (e.g., within loops, conditional statements, or functions) in which they are declared.
+Hoisting: Like var, let variables are hoisted to the top of their containing block, but they are not initialized until the declaration is encountered during code execution. This is known as the "temporal dead zone" (TDZ).
+Reassignment: let variables can be reassigned, but their value can change within their block scope. <br> <br>
+Const :Scope: const variables are also block-scoped, just like let. They are only accessible within the block in which they are declared.
+Hoisting: Like let, const variables are hoisted to the top of their containing block but are not initialized until the declaration is encountered during code execution.
+Reassignment: const variables cannot be reassigned once they are assigned a value. However, for objects and arrays declared with const, you can still modify their properties or elements.
+        </li> <br> <br>
+        
+        <li>null:
+
+            Explicitly set: Developers can assign the value null to a variable or property to indicate that it intentionally has no value or that it has been intentionally cleared or reset.
+            Use cases:
+            As a placeholder for an object property or variable that will be assigned a value later.
+            To indicate the absence of a value or the result of an operation that didn't produce a meaningful value.
+            In certain cases, when checking for the absence of an object or value. <br> <br>
+            undefined:
+
+Automatic default value: When a variable is declared but not initialized, it is automatically assigned the value undefined.
+Use cases:
+As the initial value of function parameters that are not provided when the function is called.
+When accessing object properties or array elements that do not exist.
+As the return value of functions that do not explicitly return a value.
+When a variable is declared without an initial value.
+        </li> <br>  <br>
+
+        <li>REST (Representational State Transfer) is an architectural style for designing networked applications. A REST API (Application Programming Interface) is a set of rules and conventions for building and interacting with web services based on REST principles. RESTful APIs are commonly used for creating web services and allowing different software applications to communicate with each other over the internet.
+
+Key characteristics and concepts of REST APIs include:
+
+Stateless: Each request from a client to a server must contain all the information needed to understand and process the request. The server should not store any information about the client's state between requests. This statelessness simplifies server scalability.
+
+Resources: In a REST API, resources are the main objects or data entities that can be manipulated or accessed, such as users, products, or articles. Resources are identified by URLs (Uniform Resource Locators).
+
+HTTP Verbs: REST APIs use standard HTTP methods (verbs) to perform CRUD (Create, Read, Update, Delete) operations on resources. The most common HTTP methods used in RESTful APIs are:
+
+GET: Retrieve data from a resource.
+POST: Create a new resource.
+PUT: Update an existing resource or create a resource if it doesn't exist.
+DELETE: Remove a resource.
+URLs (Uniform Resource Locators): Each resource is identified by a unique URL. These URLs follow a consistent pattern and structure, making it easy to understand and navigate the API.
+
+Representations: Resources can have multiple representations, such as JSON, XML, or HTML. Clients can request the representation they prefer or support.
+
+Statelessness: Each request is independent, and the server does not store any information about the client's state. This simplifies server design and scalability.
+
+HTTP Status Codes: REST APIs use standard HTTP status codes to indicate the result of an API request, such as 200 OK for a successful response, 404 Not Found for a resource that doesn't exist, or 401 Unauthorized for authentication issues.
+
+Headers: HTTP headers can be used to provide additional information about the request or response, including authentication tokens, caching directives, or content type.
+
+Authentication and Authorization: RESTful APIs often use standard authentication mechanisms like API keys, OAuth, or JWT (JSON Web Tokens) for securing access to resources. Authorization mechanisms control what actions clients are allowed to perform on resources.
+
+Pagination: When dealing with large datasets, REST APIs often provide pagination mechanisms to retrieve a subset of data at a time, reducing the load on the server and improving performance.
+
+Overall, REST APIs provide a standardized way for applications to communicate with each other over the internet, making them widely adopted for building web services and integrating different software systems.</li>
+    </ol>
+    
+</body>
+</html>
